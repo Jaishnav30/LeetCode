@@ -1,0 +1,13 @@
+Dutch Flag Algorithm
+
+
+
+Moore's voting Algorithm - used to find majority element iff it occurs >n/2 times
+    1. Start with the first element as the candidate and set count = 1.
+    2. Move through the array:
+        - If the element equals the candidate → count++
+        - Otherwise → count--
+    3. If count becomes 0, choose the next element as the new candidate and reset count to 1.
+    4. After the loop, the final candidate may be the majority.
+    5. Verify by counting its occurrences; if it appears **more than n/2 times**, it is the majority. Otherwise, no majority exists.
+
