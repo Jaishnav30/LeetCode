@@ -11,3 +11,14 @@ Moore's voting Algorithm - used to find majority element iff it occurs >n/2 time
     4. After the loop, the final candidate may be the majority.
     5. Verify by counting its occurrences; if it appears **more than n/2 times**, it is the majority. Otherwise, no majority exists.
 
+Kadane's Algorithm - 
+    1. Start with two variables:
+        - currentSum = 0
+        - maxSum = the smallest possible integer
+    2. Move through the array one element at a time:
+        - Add the current element to currentSum.
+        - If currentSum becomes less than the current element alone, reset currentSum to the current element.
+    3. Update maxSum whenever currentSum becomes larger than maxSum.
+    4. Continue this until the end of the array.
+    5. At the end, maxSum holds the maximum sum of any contiguous subarray.
+
