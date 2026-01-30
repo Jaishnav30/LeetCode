@@ -1,37 +1,31 @@
-#include <bits/stdc++.h>
-#include <algorithm>
-#include <limits.h>
+#include<iostream>
 using namespace std;
 
-template <typename T>
-void printVector(const vector<T>& v) {
-    cout << "[";
-    for (int i = 0; i < (int)v.size(); i++) {
-        cout << v[i];
-        if (i + 1 < v.size()) cout << ",";
-    }
-    cout << "]";
+template <class type1, class type2>
+void swap(type1 a, type2 b)
+{
+  type1 tmp=a;
+  a=b;
+  b=tmp;
 }
-
-template <typename T>
-void print2DVector(const vector<vector<T>>& grid) {
-    cout << "[";
-    for (int i = 0; i < grid.size(); i++) {
-        printVector(grid[i]);
-        if (i + 1 < grid.size()) cout << ",";
-    }
-    cout << "]";
-}
-
-void printString(const string &s) {
-    cout << "\"" << s << "\"";
-}
-
-
-// Paste Solution class here
 
 
 int main() {
-    cout << "A";
+    // int a=10,b=20;
+    // swap(a,b);
+    // cout<<a<<" "<<b;
+
+    // char a='a',b='b';
+    // swap(a,b);
+    // cout<<a<<" "<<b;
+
+    // float a=10.0,b=20.0;
+    // swap(a,b);
+    // cout<<a<<" "<<b;
+
+    // string a="jai",b="niggesh";
+    // swap(a,b);
+    // cout<<a<<" "<<b;
+    
     return 0;
 }
